@@ -5,6 +5,11 @@ let consoleText = document.getElementById('console')
 let btn00 = document.getElementById('buyItem00')
 let btn01 = document.getElementById('buyItem01')
 let btn02 = document.getElementById('buyItem02')
+let itemsList = document.getElementById('myItems')
+
+
+
+
 
 let player = {
   souls: 300,
@@ -47,7 +52,6 @@ function deleteConsole(){
 item00.innerHTML = `Души: ${player.souls}`
 item01.innerHTML = `Смола: ${player.resin}`
 
-
 function buyItem00(){
   consoleText.style.visibility = 'visible'
   setTimeout(deleteConsole, 2000);
@@ -61,6 +65,7 @@ function buyItem00(){
     item01.innerHTML = `Смола: ${player.resin}`
     btn00.innerHTML = 'Куплено'
     btn00.setAttribute('disabled', true);
+    itemsList.innerHTML += ` ${sword00.name}`
 }
 
 
@@ -87,6 +92,7 @@ function buyItem01(){
     item01.innerHTML = `Смола: ${player.resin}`
     btn01.innerHTML = 'Куплено'
     btn01.setAttribute('disabled', true);
+    itemsList.innerHTML += ` ${sword01.name}`
 }
 
 
@@ -113,6 +119,7 @@ function buyItem02(){
     item01.innerHTML = `Смола: ${player.resin}`
     btn02.innerHTML = 'Куплено'
     btn02.setAttribute('disabled', true);
+    itemsList.innerHTML +=` ${sword02.name}`
 }
 
 
