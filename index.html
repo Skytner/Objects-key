@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <h1 id="heading">
+        Объекты и ключ-значение
+        <p id="console">#</p>
+    </h1>
+</header>
+<div class="myInventory">
+    <h2 class="myInvertory__invertory">Мой инвентарь</h2>
+    <p id="item00"  class="myInventory__item00">Души:</p>
+    <p id="item01"  class="myInventory__item01">Смола:</p>
+</div>
+<div class="buttons">
+<button onclick="addSouls()" id="souls">Фарм душ</button>
+<button onclick="addResin()" id="resin">Фарм смол</button>
+</div>  
+<div class="buyItem">
+<p class="itemDescription">Палаш</p>
+<img src="sword00.webp" alt="" class="itemPhoto">
+<p class="itemPrice" id="price00"></p>
+<button onclick="buyItem00()" id="buyItem00">Купить палаш</button>
+</div>
+<div class="buyItem">
+<p class="itemDescription">Меч черного рыцаря</p>
+<img src="sword01.webp" alt="" class="itemPhoto">
+<p class="itemPrice" id="price01"></p>
+<button onclick="buyItem01()" id="buyItem01">Купить меч черного рыцаря</button>
+</div>
+<div class="buyItem">
+<p class="itemDescription">Темная рука</p>
+<img src="sword02.webp" alt="" class="itemPhoto">
+<p class="itemPrice" id="price02"></p>
+<button onclick='buyItem02()' id="buyItem02">Купить темная рука</button>
+</div>
+<script src="app.js"></script> 
+</body>
+</html>
